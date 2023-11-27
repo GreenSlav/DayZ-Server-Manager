@@ -1,0 +1,126 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/slavko/Desktop/DayZ-Server-Manager/DayZManager/CreateConnection/CreateConnection.csproj": {}
+  },
+  "projects": {
+    "/Users/slavko/Desktop/DayZ-Server-Manager/DayZManager/CreateConnection/CreateConnection.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/slavko/Desktop/DayZ-Server-Manager/DayZManager/CreateConnection/CreateConnection.csproj",
+        "projectName": "CreateConnection",
+        "projectPath": "/Users/slavko/Desktop/DayZ-Server-Manager/DayZManager/CreateConnection/CreateConnection.csproj",
+        "packagesPath": "/Users/slavko/.nuget/packages/",
+        "outputPath": "/Users/slavko/Desktop/DayZ-Server-Manager/DayZManager/CreateConnection/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/slavko/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/slavko/Desktop/DayZ-Server-Manager/DayZManager/FilterScripts/FilterScripts.csproj": {
+                "projectPath": "/Users/slavko/Desktop/DayZ-Server-Manager/DayZManager/FilterScripts/FilterScripts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "SSH.NET": {
+              "target": "Package",
+              "version": "[2023.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.311/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/slavko/Desktop/DayZ-Server-Manager/DayZManager/FilterScripts/FilterScripts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/slavko/Desktop/DayZ-Server-Manager/DayZManager/FilterScripts/FilterScripts.csproj",
+        "projectName": "FilterScripts",
+        "projectPath": "/Users/slavko/Desktop/DayZ-Server-Manager/DayZManager/FilterScripts/FilterScripts.csproj",
+        "packagesPath": "/Users/slavko/.nuget/packages/",
+        "outputPath": "/Users/slavko/Desktop/DayZ-Server-Manager/DayZManager/FilterScripts/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/slavko/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.311/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

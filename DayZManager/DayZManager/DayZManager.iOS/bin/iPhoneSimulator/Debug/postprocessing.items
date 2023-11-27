@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <_PostProcessingItem Include="DayZManager.iOS.app/DayZManager.iOS">
+      <BCSymbolMapName>DayZManager.iOS.bcsymbolmap</BCSymbolMapName>
+      <NoDSymUtil>true</NoDSymUtil>
+      <dSYMSourcePathExists>false</dSYMSourcePathExists>
+      <NoSymbolStrip>true</NoSymbolStrip>
+      <dSYMInfoPlistRelativePath>DayZManager.iOS.app.dSYM\Contents\Info.plist</dSYMInfoPlistRelativePath>
+      <SymbolFile>/Users/slavko/Desktop/DayZ-Server-Manager/DayZManager/DayZManager/DayZManager.iOS/obj/iPhoneSimulator/Debug/mtouch-symbols.list</SymbolFile>
+      <DSymName>DayZManager.iOS.app.dSYM</DSymName>
+      <SourceProjectPath>/Users/slavko/Desktop/DayZ-Server-Manager/DayZManager/DayZManager/DayZManager.iOS</SourceProjectPath>
+    </_PostProcessingItem>
+  </ItemGroup>
+</Project>

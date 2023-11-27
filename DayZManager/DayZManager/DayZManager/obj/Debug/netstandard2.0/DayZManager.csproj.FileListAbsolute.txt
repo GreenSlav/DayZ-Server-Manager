@@ -1,0 +1,15 @@
+/Users/slavko/Desktop/DayZ-Server-Manager/DayZManager/DayZManager/DayZManager/bin/Debug/netstandard2.0/DayZManager.deps.json
+/Users/slavko/Desktop/DayZ-Server-Manager/DayZManager/DayZManager/DayZManager/bin/Debug/netstandard2.0/DayZManager.dll
+/Users/slavko/Desktop/DayZ-Server-Manager/DayZManager/DayZManager/DayZManager/bin/Debug/netstandard2.0/ref/DayZManager.dll
+/Users/slavko/Desktop/DayZ-Server-Manager/DayZManager/DayZManager/DayZManager/bin/Debug/netstandard2.0/DayZManager.pdb
+/Users/slavko/Desktop/DayZ-Server-Manager/DayZManager/DayZManager/DayZManager/obj/Debug/netstandard2.0/DayZManager.csproj.AssemblyReference.cache
+/Users/slavko/Desktop/DayZ-Server-Manager/DayZManager/DayZManager/DayZManager/obj/Debug/netstandard2.0/DayZManager.GeneratedMSBuildEditorConfig.editorconfig
+/Users/slavko/Desktop/DayZ-Server-Manager/DayZManager/DayZManager/DayZManager/obj/Debug/netstandard2.0/App.xaml.g.cs
+/Users/slavko/Desktop/DayZ-Server-Manager/DayZManager/DayZManager/DayZManager/obj/Debug/netstandard2.0/MainPage.xaml.g.cs
+/Users/slavko/Desktop/DayZ-Server-Manager/DayZManager/DayZManager/DayZManager/obj/Debug/netstandard2.0/DayZManager.AssemblyInfoInputs.cache
+/Users/slavko/Desktop/DayZ-Server-Manager/DayZManager/DayZManager/DayZManager/obj/Debug/netstandard2.0/DayZManager.AssemblyInfo.cs
+/Users/slavko/Desktop/DayZ-Server-Manager/DayZManager/DayZManager/DayZManager/obj/Debug/netstandard2.0/DayZManager.csproj.CoreCompileInputs.cache
+/Users/slavko/Desktop/DayZ-Server-Manager/DayZManager/DayZManager/DayZManager/obj/Debug/netstandard2.0/XamlC.stamp
+/Users/slavko/Desktop/DayZ-Server-Manager/DayZManager/DayZManager/DayZManager/obj/Debug/netstandard2.0/DayZManager.dll
+/Users/slavko/Desktop/DayZ-Server-Manager/DayZManager/DayZManager/DayZManager/obj/Debug/netstandard2.0/refint/DayZManager.dll
+/Users/slavko/Desktop/DayZ-Server-Manager/DayZManager/DayZManager/DayZManager/obj/Debug/netstandard2.0/DayZManager.pdb

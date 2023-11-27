@@ -1,0 +1,7 @@
+﻿<Properties StartupConfiguration="{F0D904EE-DF1D-4C18-8FC5-F7C422A63C55}|Default">
+  <MonoDevelop.Ide.ItemProperties.DayZManager.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.97A2B395-520C-4F1A-BEAB-3DB6AC4CE42E" />
+  <MonoDevelop.Ide.ItemProperties.FilterScripts FirstBuild="True" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.ScriptsToBeDeployedOnServer FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.DayZManager.Android FirstBuild="True" PreferredExecutionTarget="Android.pixel_5_-_api_30" />
+</Properties>
