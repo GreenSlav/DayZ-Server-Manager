@@ -2,50 +2,50 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Text.RegularExpressions;
+using System.Threading;
+using Renci.SshNet;
 
 class Program
 {
     static void Main()
     {
-        string logFilePath = "path to admins logs"; 
-        string filteredLogFilePath = "path to new file with filtered logs"; 
 
-        HashSet<string> uniqueEntries = new HashSet<string>(); 
+        string pathDayzADminLogFile = "...";
+        
+    }
 
-        while (true)
+
+    public static string EjectPlayerID(string input)
+    {
+        string pattern = @"id=([^)]+)\)";
+
+        Match match = Regex.Match(input, pattern);
+
+        if (match.Success)
         {
-            try
-            {
-                using (FileStream fs = File.Open(logFilePath, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
-                using (BufferedStream bs = new BufferedStream(fs))
-                using (StreamReader sr = new StreamReader(bs))
-                {
-                    string line;
-                    while ((line = sr.ReadLine()) != null)
-                    {
-                        string[] parts = line.Split(new[] { ':', '-' }, StringSplitOptions.RemoveEmptyEntries);
-                        if (parts.Length >= 2)
-                        {
-                            string nickname = parts[0].Trim();
-                            string playerId = parts[1].Trim();
+            return match.Groups[1].Value;
+        }
+        else
+        {
+            return "Error occured!";
+        }
+    }
 
-                            string entry = $"{nickname} {playerId}";
 
-                            if (!uniqueEntries.Contains(entry))
-                            {
-                                File.AppendAllText(filteredLogFilePath, entry + Environment.NewLine);
-                                uniqueEntries.Add(entry);
-                            }
-                        }
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Error occured: " + ex.Message);
-            }
+    public static string EjectPlayerNickname(string input)
+    {
+        string pattern = "Player \"([^']+)\"";
 
-            System.Threading.Thread.Sleep(5000);
+        Match match = Regex.Match(input, pattern);
+
+        if (match.Success)
+        {
+            return match.Groups[1].Value;
+        }
+        else
+        {
+            return "Error occured!";
         }
     }
 }

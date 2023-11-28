@@ -15,15 +15,13 @@ public static class FilterMethods
 
     public static string EjectPlayerID(string input)
     {
-        string pattern = "is connected (id=([^']+))";
-        string altPattern = "(id=([^']+)) has been disconnected";
+        string pattern = @"id=([^)]+)\)";
 
         Match match = Regex.Match(input, pattern);
-        Match altMatch = Regex.Match(input, altPattern);
 
-        if (match.Success || altMatch.Success)
+        if (match.Success)
         {
-            return (match.Success) ? match.Groups[1].Value : altMatch.Groups[1].Value;
+            return match.Groups[1].Value;
         }
         else
         {
@@ -35,6 +33,22 @@ public static class FilterMethods
     public static string EjectPlayerNickname(string input)
     {
         string pattern = "Player \"([^']+)\"";
+
+        Match match = Regex.Match(input, pattern);
+
+        if (match.Success)
+        {
+            return match.Groups[1].Value;
+        }
+        else
+        {
+            return "Error occured!";
+        }
+    }
+
+    public static string EjectSteamID(string input)
+    {
+        string pattern = @"steamID=(\d+)";
 
         Match match = Regex.Match(input, pattern);
 

@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "QB1SUSn3s80IkE2uOPUWNRUOfo2cre8evI7f08YZxH4okxuXGZmSm8AowW1zf9ECp0fYVJEHUJsyqcV2uAoFCQ==",
+  "dgSpecHash": "ZN8rsNO3d9lmlaml+qdOqTXMCUuLHcGWPRJ1hKtJXJ3PtPx4cfpjPUnCA8JTYawgzC5F9BviS0NFLUURMtzo6w==",
   "success": true,
   "projectFilePath": "/Users/slavko/Desktop/DayZ-Server-Manager/DayZManager/ScriptsToBeDeployedOnServer/ScriptsToBeDeployedOnServer.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/slavko/.nuget/packages/ssh.net/2023.0.0/ssh.net.2023.0.0.nupkg.sha512",
+    "/Users/slavko/.nuget/packages/sshnet.security.cryptography/1.3.0/sshnet.security.cryptography.1.3.0.nupkg.sha512"
+  ],
   "logs": []
 }

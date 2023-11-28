@@ -1,7 +1,35 @@
 ﻿<Properties StartupConfiguration="{F0D904EE-DF1D-4C18-8FC5-F7C422A63C55}|Default">
-  <MonoDevelop.Ide.ItemProperties.DayZManager.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.97A2B395-520C-4F1A-BEAB-3DB6AC4CE42E" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="FilterScripts/FilterMethods.cs">
+    <Files>
+      <File FileName="CreateConnection/SSHCommands.cs" Line="101" Column="33" />
+      <File FileName="CreateConnection/Connection.cs" Line="1" Column="1" />
+      <File FileName="CreateConnection/Program.cs" Line="1" Column="1" />
+      <File FileName="CustomExceptions/CustomEx.cs" Line="1" Column="1" />
+      <File FileName="FilterScripts/Player.cs" Line="1" Column="1" />
+      <File FileName="FilterScripts/FilterMethods.cs" Line="1" Column="1" />
+      <File FileName="FilterScripts/Program.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="DayZManager" expanded="True">
+            <Node name="FilterScripts">
+              <Node name="FilterMethods.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.FilterScripts FirstBuild="True" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.ScriptsToBeDeployedOnServer FirstBuild="True" />
-  <MonoDevelop.Ide.ItemProperties.DayZManager.Android FirstBuild="True" PreferredExecutionTarget="Android.pixel_5_-_api_30" />
+  <MonoDevelop.Ide.ItemProperties.DayZManager.Android PreferredExecutionTarget="Android.pixel_5_-_api_30" FirstBuild="True" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_5_-_api_30" />
+  <MonoDevelop.Ide.ItemProperties.CustomExceptions FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.DayZManager.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.46C4F3CF-FDA9-4F73-9AD6-F35D0E939BB4" />
 </Properties>

@@ -31,6 +31,16 @@
           }
         }
       },
+      "CustomExceptions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/CustomExceptions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CustomExceptions.dll": {}
+        }
+      },
       "FilterScripts/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -100,6 +110,11 @@
         "sshnet.security.cryptography.nuspec"
       ]
     },
+    "CustomExceptions/1.0.0": {
+      "type": "project",
+      "path": "../CustomExceptions/CustomExceptions.csproj",
+      "msbuildProject": "../CustomExceptions/CustomExceptions.csproj"
+    },
     "FilterScripts/1.0.0": {
       "type": "project",
       "path": "../FilterScripts/FilterScripts.csproj",
@@ -108,6 +123,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "CustomExceptions >= 1.0.0",
       "FilterScripts >= 1.0.0",
       "SSH.NET >= 2023.0.0"
     ]
@@ -138,6 +154,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "/Users/slavko/Desktop/DayZ-Server-Manager/DayZManager/CustomExceptions/CustomExceptions.csproj": {
+              "projectPath": "/Users/slavko/Desktop/DayZ-Server-Manager/DayZManager/CustomExceptions/CustomExceptions.csproj"
+            },
             "/Users/slavko/Desktop/DayZ-Server-Manager/DayZManager/FilterScripts/FilterScripts.csproj": {
               "projectPath": "/Users/slavko/Desktop/DayZ-Server-Manager/DayZManager/FilterScripts/FilterScripts.csproj"
             }

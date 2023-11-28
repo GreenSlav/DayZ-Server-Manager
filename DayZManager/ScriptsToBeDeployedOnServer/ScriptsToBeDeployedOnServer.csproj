@@ -7,4 +7,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="SSH.NET" Version="2023.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FilterScripts\FilterScripts.csproj" />
+  </ItemGroup>
 </Project>

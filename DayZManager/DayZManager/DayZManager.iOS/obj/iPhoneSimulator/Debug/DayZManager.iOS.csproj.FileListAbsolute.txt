@@ -57,8 +57,8 @@
 /Users/slavko/Desktop/DayZ-Server-Manager/DayZManager/DayZManager/DayZManager.iOS/obj/iPhoneSimulator/Debug/_ProcessedContentPath.items
 /Users/slavko/Desktop/DayZ-Server-Manager/DayZManager/DayZManager/DayZManager.iOS/obj/iPhoneSimulator/Debug/optimized/
 /Users/slavko/Desktop/DayZ-Server-Manager/DayZManager/DayZManager/DayZManager.iOS/obj/iPhoneSimulator/Debug/DayZManager.iOS.csproj.AssemblyReference.cache
-/Users/slavko/Desktop/DayZ-Server-Manager/DayZManager/DayZManager/DayZManager.iOS/obj/iPhoneSimulator/Debug/resourcestamps/DayZManager.stamp
 /Users/slavko/Desktop/DayZ-Server-Manager/DayZManager/DayZManager/DayZManager.iOS/obj/iPhoneSimulator/Debug/DayZManager.iOS.csproj.CoreCompileInputs.cache
 /Users/slavko/Desktop/DayZ-Server-Manager/DayZManager/DayZManager/DayZManager.iOS/obj/iPhoneSimulator/Debug/DayZManager.iOS.csproj.CopyComplete
 /Users/slavko/Desktop/DayZ-Server-Manager/DayZManager/DayZManager/DayZManager.iOS/obj/iPhoneSimulator/Debug/DayZManager.iOS.exe
 /Users/slavko/Desktop/DayZ-Server-Manager/DayZManager/DayZManager/DayZManager.iOS/obj/iPhoneSimulator/Debug/DayZManager.iOS.pdb
+/Users/slavko/Desktop/DayZ-Server-Manager/DayZManager/DayZManager/DayZManager.iOS/obj/iPhoneSimulator/Debug/resourcestamps/DayZManager.stamp

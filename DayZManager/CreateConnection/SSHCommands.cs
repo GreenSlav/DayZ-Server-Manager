@@ -1,12 +1,51 @@
 ﻿using System;
 using Renci.SshNet;
 using System.Collections.Generic;
+using CustomExceptions;
 
 namespace CreateConnection;
 
 public static class SSHCommands
 {
-	public static string GetInfoFromText(Connection connection, string pathFile)
+	// neccessary script to create filtered logs on ypur server (run only once)
+	public static void CreateFilteredTextFile(Connection connection, string pathDayZServer = @"C:\Program Files (x86)\Steam\steamapps\common\DayZServer")
+	{
+		using (var client = new SshClient(connection.IP, connection.Login, connection.Password))
+		{
+			pathDayZServer = @"" + pathDayZServer;
+			try
+			{
+				client.Connect();
+
+				if (client.IsConnected)
+				{
+                    string command = $"test -f {pathDayZServer + @"\filtered-logs.txt"} && echo 'File exists' || echo 'File not found'";
+					var cmd = client.RunCommand(command);
+					string result = cmd.Result.Trim();
+                    if (result == "File not found")
+                    {
+						using (var sshCommand = client.CreateCommand($"type nul > {pathDayZServer + @"\filtered-logs.txt"}"))
+						{
+							sshCommand.Execute();
+							return;
+						}
+                    }
+					return;
+                }
+                else
+				{
+					throw new CustomEx("Failed to connect to client!");
+				}
+			}
+			catch (Exception ex)
+			{
+				Console.WriteLine(ex.Message);
+			}
+		}
+	}
+
+
+    public static string GetInfoFromText(Connection connection, string pathFile)
 	{
 		try
 		{
@@ -24,13 +63,13 @@ public static class SSHCommands
 				}
 				else
 				{
-					return "Connection error!";
+					throw new CustomEx("Connection error");
 				}
 			}
 		}
 		catch (Exception ex)
 		{
-			return "Error occured!";
+			throw new CustomEx(ex.Message);
 		}
 	}
 
@@ -53,63 +92,17 @@ public static class SSHCommands
                 }
                 else
                 {
-                    return;
+					throw new CustomEx("Failed to connect!");
                 }
             }
         }
 		catch (Exception ex)
 		{
-			return;
+			throw new CustomEx(ex.Message);
 		}
     }
 
-	/*
-	public static void WriteIDToBanList(Connection connection, string pathFile, input)
-	{
-		try
-		{
-            using (var client = new SshClient(connection.IP, connection.Login, connection.Password))
-            {
-				client.Connect();
-
-				if (client.IsConnected)
-				{
-					using (var sshCommand = client.CreateCommand($"echo '{FilterScripts.PlayerId}' > {pathFile}"))
-				}
-				else
-				{
-					return;
-				}
-            }
-        }
-		catch (Exception ex)
-		{
-			return;
-		}
-	}
-	*/
-
-
-	/*
-	using (FileStream fs = File.Open(path, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
-	using (BufferedStream bs = new BufferedStream(fs))
-	using (StreamReader sr = new StreamReader(bs))
-	{
-		string line;
-		while ((line = sr.ReadLine()) != null)
-		{
-
-		}
-	}
-	*/
-
-
-	/*
-	******************************************************************************
-	AdminLog started on 2023-11-27 at 07:43:00
-	08:09:04 | Player "Survivor" is connected (id=F3lztjrbuQqvwkJ-YK6khioXVSqiPmH4eMOdj4nHc84=)
-	08:14:29 | Player "Survivor"(id=F3lztjrbuQqvwkJ-YK6khioXVSqiPmH4eMOdj4nHc84=) has been disconnected
-	*/
+	
 	public static Dictionary<string, string> GetAllTimePlayers(Connection connection, string pathToAdminLogs)
 	{
 		// ...
