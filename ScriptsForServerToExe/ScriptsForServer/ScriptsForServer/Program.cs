@@ -65,7 +65,7 @@ class Program
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Ошибка при чтении файла: " + ex.Message);
+                Console.WriteLine("Error: " + ex.Message);
             }
         }
     }
@@ -82,7 +82,7 @@ class Program
         }
         else
         {
-            return "Error occured!";
+            return "";
         }
     }
 
@@ -99,7 +99,7 @@ class Program
         }
         else
         {
-            return "Error occured!";
+            return "";
         }
     }
 }
